@@ -68,20 +68,20 @@ dockers:
     binaries:
       - golangci-lint
     image_templates:
-      - "golangci/golangci-lint:latest"
-      - "golangci/golangci-lint:{{ .Tag }}"
-      - "golangci/golangci-lint:v{{ .Major }}.{{ .Minor }}"
+      - "iwankgb/golangci-lint:latest"
+      - "iwankgb/golangci-lint:{{ .Tag }}"
+      - "iwankgb/golangci-lint:v{{ .Major }}.{{ .Minor }}"
   - dockerfile: build/Dockerfile.alpine
     binaries:
       - golangci-lint
     image_templates:
-      - "golangci/golangci-lint:latest-alpine"
-      - "golangci/golangci-lint:{{ .Tag }}-alpine"
-      - "golangci/golangci-lint:v{{ .Major }}.{{ .Minor }}-alpine"
+      - "iwankgb/golangci-lint:latest-alpine"
+      - "iwankgb/golangci-lint:{{ .Tag }}-alpine"
+      - "iwankgb/golangci-lint:v{{ .Major }}.{{ .Minor }}-alpine"
 
 brews:
   - github:
-      owner: golangci
+      owner: iwankgb
       name: homebrew-tap
     folder: Formula
     homepage:  https://golangci.com
