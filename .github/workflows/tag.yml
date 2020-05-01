@@ -6,6 +6,7 @@ on:
       - v*
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GOLANGCI_LINT_TOKEN }}
     steps:
